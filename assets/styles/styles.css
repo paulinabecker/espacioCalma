@@ -1,0 +1,291 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*font-family: "Lato", sans-serif;*/
+
+:root{
+    --colorBg: #FBFBF2; 
+    --colorGreen: #D5DDC7;
+    --colorText: #443730;
+    --colorBtn: #CABBE9;
+    --colorTable: #E3DBF2;
+    --colorForm: #D9D9D9;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #443730;
+    background-color: FBFBF2;
+}
+
+/*NAVBAR*/
+.logo{
+    width: 100px;
+    margin: 15px 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    
+}
+
+.navbar_links{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+/*HEADER*/
+header{
+    background-color: #D5DDC7;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: 150px;
+    margin-top: 90px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.btn_one{
+    background-color: #CABBE9;
+    font-family: "Lato", sans-serif;
+    width: 160px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+.container_header{
+    display: flex;
+    height: 350px;
+    position: relative;
+    z-index: 3;
+    top: -50px;
+}
+
+.img_pose_loto{
+    width: 750px;
+    position: absolute;
+    z-index: 4;
+}
+
+
+/*ABOUT ME*/
+.img_instructora{
+    width: 350px;
+    margin-top: 180px;
+    margin-left:180px;
+}
+
+.descripcion_instructora{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.container_txt_instructora{
+    width: 25%;
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+.title_instructora{
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+}
+
+.subtitle{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.txt_instructora, .txt_class_yoga{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    text-align: start;
+}
+
+/*CLASSES*/
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container_classes{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.class_type{
+    width: 200px;
+    margin: 30px;
+    background-color: #CABBE9;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.loto_flower{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.title_yoga{
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*BENEFITS*/
+.container_benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.benefit{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    margin: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.benefit_two{
+    margin-left: 85px;
+}
+
+.container_table{
+    display: flex;
+}
+
+.benefit_three{
+    margin-left: 60px;
+}
+
+.benefit_four{
+    margin-left: 45px;
+}
+
+/*TABLE*/
+.container_table{
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+}
+
+th{
+    width: 150px;
+    background-color: #D5DDC7;
+    width: 250px;
+    padding: 20px;
+}
+
+td{
+    text-align: center;
+    padding: 15px;
+}
+
+.container_table tr:nth-child(2) {
+  background-color: #E3DBF2;  /* verde muy claro */
+}
+.container_table tr:nth-child(3) {
+  background-color: #D5DDC7;  /* celeste muy claro */
+}
+.container_table tr:nth-child(4) {
+  background-color: #E3DBF2;  /* anaranjado muy claro */
+}
+
+/*BOOKING*/
+.container_form{
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.btn_two{
+    background-color: #CABBE9;
+    font-family: "Lato", sans-serif;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 40px;
+    margin-left: 115px;
+}
+
+input{
+    background-color: var(--colorForm);
+    height: 30px;
+    margin: 15px 0px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+select{
+    width: 350px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    margin: 15px 0px;
+    background-color: #D9D9D9;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+/*FOOTER*/
+.container_icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+.rrss{
+    font-size: 30px;
+    justify-content: center;
+}
+
+.rights{
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
