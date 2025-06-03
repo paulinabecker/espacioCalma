@@ -1,24 +1,17 @@
-# espacioCalma
-Página de servicios de clases de yoga. Descripción de instructora, sus clases y funcionalidades de reserva.
+Proyecto #espacioCalma
+Aplicación web sencillade servicios de clases de yoga. Permite reservar clases a través de un formulario.
 
+Tecnologías utilizadas:
+- HTML 5
+- CSS3
+- JavaScript Vanilla 
+- Librería SweetAlert 2
 
-ICONS
-IG
-<i class="fa-brands fa-instagram"></i>
-FB
-<i class="fa-brands fa-facebook"></i>
-WTP
-<i class="fa-brands fa-whatsapp"></i>
-EMAIL
-<i class="fa-regular fa-envelope"></i>
+Funcionalidades
+- Validación de campos del formulario
+- Mensaje personalizado de reserva exitosa
+- Reset automático del formulario tras reserva exitosa
 
-STRESS
-<i class="fa-solid fa-heart-pulse"></i>
-FLEX
-<i class="fa-solid fa-person-running"></i>
-BRAIN
-<i class="fa-solid fa-brain"></i>
-FORCE
-<i class="fa-solid fa-dumbbell"></i>
-LOTO
-<i class="fas fa-spa"></i>
+Acceso a aplicación a través de Netlify:
+https://espacio-calma.netlify.app/
+
