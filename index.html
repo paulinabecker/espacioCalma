@@ -1,153 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espacio Calma</title>
     <!--STYLES CSS-->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <!--FONTAWESOME CDN-->
-    <script src="https://kit.fontawesome.com/26373108bd.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/26373108bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--CDN SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
     <!--NAVBAR-->
     <nav class="navbar">
-        <img class="logo" src="./assets/img/Espacio_Calma-removebg-preview.png" alt="Logo Espacio Calma">
-        <ul class="navbar_links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#about_me">Sobre mí</a></li>
-            <li><a href="#classes">Clases</a></li>
-            <li><a href="#booking">Reservar</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
+      <a href="#index.html"
+        ><img
+          class="logo"
+          src="./assets/img/Espacio_Calma-removebg-preview.png"
+          alt="Logo Espacio Calma"
+      /></a>
+
+      <ul class="navbar_links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#about_me">Sobre mí</a></li>
+        <li><a href="#classes">Clases</a></li>
+        <li><a href="#schedules">Horarios</a></li>
+        <li><a href="#booking">Reservar</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
     </nav>
     <!--HEADER-->
     <header>
-        <div class="container_header">
+      <div class="container_header">
         <div>
-        <h1>Respira profundo <br> y vuelve a ti</h1>
-        <button class="btn_one">Reserva tu clase</button>  
-        </div> 
+          <h1>
+            Respira profundo <br />
+            y vuelve a ti
+          </h1>
+          <button id="cta_btn" class="btn_one">Reserva tu clase</button>
+        </div>
         <div>
-        <img class="img_loto" src="./assets/img/beautiful-woman-is-engaged-yoga-studio-removebg-preview.png" alt="Mujer en posición flor de loto">
+          <img
+            class="img_loto"
+            src="./assets/img/beautiful-woman-is-engaged-yoga-studio-removebg-preview.png"
+            alt="Mujer en posición flor de loto"
+          />
         </div>
-        </div>
+      </div>
     </header>
     <!--ABOUT ME-->
     <section id="about_me">
-        <div class="description">
+      <div class="description">
         <div class="container_img_instructor">
-        <img class="img_instructor" src="./assets/img/full-shot-happy-woman-floor.jpg" alt="">
+          <img
+            class="img_instructor"
+            src="./assets/img/full-shot-happy-woman-floor.jpg"
+            alt="Instructora Marcela Ruiz"
+          />
         </div>
         <div class="container_txt_instructor">
-        <h2 class="title_instructor">Marcela Ruiz</h2>
-        <h4 class="subtitle">Instructora de Yoga Integral</h4>
-        <p class="txt_instructor">Soy instructora de yoga con más de 5 años de experiencia guiando clases enfocadas en el bienestar físico y emocional. Mi misión es ayudarte a reconectar con tu cuerpo y mente desde la calma y el movimiento consciente.</p>
+          <h2 class="title_instructor">Marcela Ruiz</h2>
+          <h4 class="subtitle">Instructora de Yoga Integral</h4>
+          <p class="txt_instructor">
+            Soy instructora de yoga con más de 5 años de experiencia guiando
+            clases enfocadas en el bienestar físico y emocional. Mi misión es
+            ayudarte a reconectar con tu cuerpo y mente desde la calma y el
+            movimiento consciente.
+          </p>
         </div>
-        </div>
+      </div>
     </section>
     <!--CLASSES-->
     <h2 id="classes" class="title">Clases</h2>
     <div class="container_classes">
-        <div class="class_type">
-    <i class="loto_flower fas fa-spa"></i>
-    <h3 class="title_yoga">Hatha Yoga</h3>
-    <p class="txt_class_yoga">Disciplina que nos ayuda a conectar con nuestro cuerpo, con nuestro sentir y con nuestros pensamientos, nos ayuda a traer equilibrio y consciencia, y nos permite liberar bloqueos y resistencias que impiden que sigamos avanzando. </p>
-    </div>
-    <div class="class_type">
-    <i class="loto_flower fas fa-spa"></i>
-    <h3 class="title_yoga">Vinyasa Yoga</h3>
-    <p class="txt_class_yoga">Se realiza con movimientos controlados e intencionados que requieren equilibrio, fuerza y conciencia del cuerpo en el espacio. Todos los elementos están conectados, lo que da lugar a un flujo. Cuando las posturas se practican de tal manera, se da un fluir entre ellas. Es por eso que a veces se le llama «Flow Yoga»</p>
-    </div>
-    <div class="class_type">
-    <i class="loto_flower fas fa-spa"></i>
-    <h3 class="title_yoga">Kundalini Yoga</h3>
-    <p class="txt_class_yoga"> En este estilo de yoga se combinan asanas, respiración, meditaciones y canto de mantras para meditar con el objetivo es desbloquear la energía kundalini que se ubica en la base de nuestra columna, y mantenerte en una elevada vibración que logre tu equilibrio energético físico, mental y emocional.</p>
-    </div>
+      <div class="class_type">
+        <i class="loto_flower fas fa-spa"></i>
+        <h3 class="title_yoga">Hatha Yoga</h3>
+        <p class="txt_class_yoga">
+          Disciplina que nos ayuda a conectar con nuestro cuerpo, con nuestro
+          sentir y con nuestros pensamientos, nos ayuda a traer equilibrio y
+          consciencia, y nos permite liberar bloqueos y resistencias que impiden
+          que sigamos avanzando.
+        </p>
+      </div>
+      <div class="class_type">
+        <i class="loto_flower fas fa-spa"></i>
+        <h3 class="title_yoga">Vinyasa Yoga</h3>
+        <p class="txt_class_yoga">
+          Se realiza con movimientos controlados e intencionados que requieren
+          equilibrio, fuerza y conciencia del cuerpo en el espacio. Todos los
+          elementos están conectados, lo que da lugar a un flujo. Cuando las
+          posturas se practican de tal manera, se da un fluir entre ellas. Es
+          por eso que a veces se le llama «Flow Yoga».
+        </p>
+      </div>
+      <div class="class_type">
+        <i class="loto_flower fas fa-spa"></i>
+        <h3 class="title_yoga">Kundalini Yoga</h3>
+        <p class="txt_class_yoga">
+          En este estilo de yoga se combinan asanas, respiración, meditaciones y
+          canto de mantras para meditar con el objetivo es desbloquear la
+          energía kundalini que se ubica en la base de nuestra columna, y
+          mantenerte en una elevada vibración que logre tu equilibrio energético
+          físico, mental y emocional.
+        </p>
+      </div>
     </div>
     <!--BENEFITS-->
     <section>
-        <h2 class="title">Beneficios</h2>
-        <div class="container_benefits">
-            <div class=" benefit benefit_one">
-        <i class="fa-solid fa-heart-pulse"></i>
-        <p>Reduce el estrés</p>
+      <h2 class="title">Beneficios</h2>
+      <!--CONTAINER BENEFITS-->
+      <div class="container_benefits">
+        <!--GROUP 1-->
+        <div class="group1">
+          <div class="benefit benefit1">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <p>Reduce el estrés</p>
+          </div>
+          <div class="benefit benefit2">
+            <i class="fa-solid fa-brain"></i>
+            <p>Equilibra la mente</p>
+          </div>
         </div>
-        <div class="benefit benefit_two">
-        <i class="fa-solid fa-person-running"></i>
-        <p>Mejora la flexibilidad</p>
+        <!--GROUP 2-->
+
+        <div class="group2">
+          <div class="benefit benefit3">
+            <i class="fa-solid fa-person-running"></i>
+            <p>Mejora la flexibilidad</p>
+          </div>
+          <div class="benefit benefit4">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p>Fortalece el cuerpo</p>
+          </div>
         </div>
-        <div class="benefit benefit_three">
-        <i class="fa-solid fa-dumbbell"></i>
-        <p>Fortalece el cuerpo</p>
-        </div>
-        <div class="benefit benefit_four">
-        <i class="fa-solid fa-brain"></i>
-        <p>Equilibra la mente</p>
-        </div>
-        </div>
+      </div>
     </section>
     <!--SCHEDULES-->
-    <h2 class="title">Horarios</h2>
+    <h2 id="schedules" class="title">Horarios</h2>
     <div class="container_table">
-    <table>
+      <table>
         <tr class="main_booking">
-            <th>Día</th>
-            <th>Hora</th>
-            <th>Clase</th>
+          <th>Día</th>
+          <th>Hora</th>
+          <th>Clase</th>
         </tr>
         <tr>
-            <td>Lunes</td>
-            <td>18:00 hrs</td>
-            <td>Hatha Yoga</td>
+          <td>Lunes</td>
+          <td>18:00 hrs</td>
+          <td>Hatha Yoga</td>
         </tr>
         <tr>
-            <td>Miércoles</td>
-            <td>19:00 hrs</td>
-            <td>Vinyasa</td>
+          <td>Miércoles</td>
+          <td>19:00 hrs</td>
+          <td>Vinyasa</td>
         </tr>
         <tr>
-            <td>Viernes</td>
-            <td>17:00 hrs</td>
-            <td>Kundalini</td>
+          <td>Viernes</td>
+          <td>17:00 hrs</td>
+          <td>Kundalini</td>
         </tr>
-    </table>
+      </table>
     </div>
     <!--BOOKING-->
-    <h2 id="booking" class="title">Reserva tu clase</h2>
-    <div class="container_form">
-    <form action="">
-        <label for="">Nombre</label>
-        <br>
-        <input type="email"><br>
-        <label for="">Correo</label>
-        <br>
-        <input type="text">
-        <br>
-        <label for="">Tipo de clase</label>
-        <br>
-        <select name="" id="">
-            <option value="">Hatha Yoga - Lunes 18:00 hr.</option>
-            <option value="">Vinyasa Yoga - Miércoles 19:00 hr.</option>
-            <option value="">Kundalini Yoga - Viernes 17:00 hr.</option>
-        </select>
-        <br>
-        <button class="btn_two">Reservar</button>
-    </form>
-    </div>
+    <section id="booking">
+      <h2 class="title">Reserva tu clase</h2>
+      <div class="container_form">
+        <form id="form_booking">
+          <label for="name">Nombre</label>
+          
+          <br />
+          <input id="classmate_name" type="text" required placeholder="Ingresa tu nombre" /><br />
+
+          <label for="mailto">Correo</label>
+          <br />
+          <input type="email" required placeholder="hola@email.com"/>
+          <br />
+          <label for="class">Elige tu clase</label>
+          <br />
+          <select name="class" id="type_class" required>
+            <option value="Hatha Yoga">Hatha Yoga - Lunes 18:00 hr.</option>
+            <option value="Vinyasa Yoga">Vinyasa Yoga - Miércoles 19:00 hr.</option>
+            <option value="Kundalini Yoga">
+              Kundalini Yoga - Viernes 17:00 hr.
+            </option>
+          </select>
+          <br />
+          <button type="submit" class="btn_two">Reservar</button>
+        </form>
+        <p id="ok_msg"></p>
+      </div>
+    </section>
     <!--FOOTER-->
     <footer>
-        <div id="contact" class="container_icons">
-        <a href="https://www.instagram.com/" target="_blank"><i class="rrss fa-brands fa-instagram"></i></a>
-        <a href="https://web.facebook.com/" target="_blank"><i class="rrss fa-brands fa-facebook"></i></a>
-        <a href="https://wa.me/56912345678" target="_blank"><i class="rrss fa-brands fa-whatsapp"></i></a>
-        <a href="mailto:contacto@espaciocalma.cl" target="_blank"><i class="rrss fa-regular fa-envelope"></i></a>
-        </div>
-        <p class="rights">© 2025 Espacio Calma. Todos los derechos reservados.</p>
-        
+      <div id="contact" class="container_icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="rrss fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://web.facebook.com/" target="_blank"
+          ><i class="rrss fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://wa.me/56912345678" target="_blank"
+          ><i class="rrss fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="mailto:contacto@espaciocalma.cl" target="_blank"
+          ><i class="rrss fa-regular fa-envelope"></i
+        ></a>
+      </div>
+      <p class="rights">© 2025 Espacio Calma. Todos los derechos reservados.</p>
     </footer>
-    
-
-
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
